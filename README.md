@@ -19,10 +19,19 @@
 Cortez,Paulo, Cerdeira,A., Almeida,F., Matos,T., and Reis,J.. (2009). Wine Quality. UCI Machine Learning Repository. https://doi.org/10.24432/C56S3T.
 
 # Resultados
+Após todos os tramentos e pré processamento dos dados, foi refeita os modelos de de SVC e Logistic Regression, assim, para poder validar e veriicar qual dos modelos a serem utilizados, foi calculado o a curva ROC e a pontuação AUC.
+<div align="center">
+<img src="https://github.com/renanwta/Red-Wine/assets/161327900/caf9aec9-482b-4fc0-9037-c08f5ed6d716" width="500px" />
+</div>
+Para a curva ROC do modelo de SVC temos que a pontuação AUC foi de 85%
 
 <div align="center">
-<img src="https://github.com/renanwta/IDEB/assets/161327900/7b90c3aa-9bdd-4830-b5cf-4509ad09df55" width="1000px" />
+<img src="https://github.com/renanwta/Red-Wine/assets/161327900/c22ff154-8ec6-4518-884e-5093a1bb52c3" width="500px" />
 </div>
+Já para a curva ROC do modelo de SVC temos que a pontuação AUC foi de 81%
+
+
+Assim dizemos que o melhor modelo a ser utilziado será o modelo de SVC para prever as classes da qualidade do vinho
 
 
 # Step by Step

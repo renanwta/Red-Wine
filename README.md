@@ -9,9 +9,9 @@
 ## Python
 - Tratamento dos dados: Pandas
 - Biblioteca de Machine Learning: Sklearn
-- Biblioteca para análise estatística: Statsmodels
+- Biblioteca de seleção de Features: SelectKBest e F_classifier 
 - Bibliotecas de pré processamentos: Imblearn e Sklearn
-- Gráficos: Seabron e Matplotlib
+- Gráficos: Seaborn e Matplotlib
 
 ## Base de dados utilizado
   A base de dados é pública e foi retirada no site da UCI Machine Learning Repository:
@@ -25,10 +25,33 @@ Cortez,Paulo, Cerdeira,A., Almeida,F., Matos,T., and Reis,J.. (2009). Wine Quali
 1. Importação dos dados
 2. Conhecendo os dados
 
-   2.1 Observando os outliers
+   2.1 Observando os Outliers
    
    2.2 Tratando os Outliers
    
    2.3 Histograma após o tratamento
 
-3 Criando Modelo no Statsmodels
+3. Selecionando as features
+
+   3.1 Encontrando as Colunas
+
+4. Criação dos modelo Suport Vetorial Classification - SVC
+   
+   4.1 Cálculo do base line
+   
+5. Criação dos modelo Logistic Regression
+   
+   5.1 Cálculo do base line
+
+6. Primeira Conclusão
+7. Rebalanceamento dos dados da variável dependente
+8. Novo Modelo de SVC
+   
+ 8.1 Cálculo da Curva ROC e pontuação AUC
+ 
+9. Novo Modelo de Logistic Regression
+
+    9.1 Cálculo da Curva ROC e pontuação AUC
+
+10. Segunda Conclusão
+11. Cálculo Pontuais

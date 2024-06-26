@@ -20,6 +20,10 @@ Cortez,Paulo, Cerdeira,A., Almeida,F., Matos,T., and Reis,J.. (2009). Wine Quali
 
 # Resultados
 
+<div align="center">
+<img src="https://github.com/renanwta/IDEB/assets/161327900/7b90c3aa-9bdd-4830-b5cf-4509ad09df55" width="1000px" />
+</div>
+
 
 # Step by Step
 1. Importação dos dados

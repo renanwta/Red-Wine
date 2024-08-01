@@ -31,7 +31,12 @@ Para a curva ROC do modelo de SVC temos que a pontuação AUC foi de 85%
 Já para a curva ROC do modelo de SVC temos que a pontuação AUC foi de 81%
 
 
-Assim dizemos que o melhor modelo a ser utilziado será o modelo de SVC para prever as classes da qualidade do vinho
+<div align="center">
+<img src="https://github.com/user-attachments/assets/8401be45-de5e-4d60-b1c2-7846814a42e0" width="500px" />
+</div>
+Já para a curva ROC do modelo de SVC temos que a pontuação AUC foi de 92%
+
+Assim dizemos que o melhor modelo a ser utilziado será o modelo de XGBoostClassifier para prever as classes da qualidade do vinho
 
 
 # Step by Step
@@ -66,5 +71,13 @@ Assim dizemos que o melhor modelo a ser utilziado será o modelo de SVC para pre
 
     9.1 Cálculo da Curva ROC e pontuação AUC
 
-10. Segunda Conclusão
-11. Cálculo Pontuais
+10. Modelo XGBoost
+
+    10.1 Cálculo da Curva ROC e pontuação AUC
+
+11. RandomSearchCV para o modelos selecionado
+    
+    11.1 Nested Cross Validation
+    
+12. Segunda Conclusão
+13. Cálculo Pontuais

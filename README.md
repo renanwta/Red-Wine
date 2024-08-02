@@ -21,20 +21,20 @@ Cortez,Paulo, Cerdeira,A., Almeida,F., Matos,T., and Reis,J.. (2009). Wine Quali
 # Resultados
 Após todos os tramentos e pré processamento dos dados, foi refeita os modelos de de SVC e Logistic Regression, assim, para poder validar e veriicar qual dos modelos a serem utilizados, foi calculado o a curva ROC e a pontuação AUC.
 <div align="center">
-<img src="https://github.com/renanwta/Red-Wine/assets/161327900/caf9aec9-482b-4fc0-9037-c08f5ed6d716" width="500px" />
+<img src="https://github.com/user-attachments/assets/7d8a2d6e-b3b7-4fbf-8e35-e47b2809809c" width="500px" />
 </div>
 Para a curva ROC do modelo de SVC temos que a pontuação AUC foi de 85%
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/7d8a2d6e-b3b7-4fbf-8e35-e47b2809809c" width="500px" />
+<img src="https://github.com/user-attachments/assets/9df72513-b84a-4431-9552-6593b3ed3f08" width="500px" />
 </div>
-Já para a curva ROC do modelo de SVC temos que a pontuação AUC foi de 81%
+Já para a curva ROC do modelo de Logistic Regression temos que a pontuação AUC foi de 81%
 
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/8401be45-de5e-4d60-b1c2-7846814a42e0" width="500px" />
 </div>
-Já para a curva ROC do modelo de SVC temos que a pontuação AUC foi de 92%
+Já para a curva ROC do modelo de XGBoost temos que a pontuação AUC foi de 92%
 
 Assim dizemos que o melhor modelo a ser utilziado será o modelo de XGBoostClassifier para prever as classes da qualidade do vinho
 

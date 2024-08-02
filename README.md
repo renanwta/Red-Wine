@@ -26,7 +26,7 @@ Após todos os tramentos e pré processamento dos dados, foi refeita os modelos 
 Para a curva ROC do modelo de SVC temos que a pontuação AUC foi de 85%
 
 <div align="center">
-<img src="https://github.com/renanwta/Red-Wine/assets/161327900/c22ff154-8ec6-4518-884e-5093a1bb52c3" width="500px" />
+<img src="https://github.com/user-attachments/assets/7d8a2d6e-b3b7-4fbf-8e35-e47b2809809c" width="500px" />
 </div>
 Já para a curva ROC do modelo de SVC temos que a pontuação AUC foi de 81%
 

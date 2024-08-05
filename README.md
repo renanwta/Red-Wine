@@ -36,8 +36,9 @@ Já para a curva ROC do modelo de Logistic Regression temos que a pontuação AU
 </div>
 Já para a curva ROC do modelo de XGBoost temos que a pontuação AUC foi de 92%
 
-Assim dizemos que o melhor modelo a ser utilziado será o modelo de XGBoostClassifier para prever as classes da qualidade do vinho
+Assim dizemos que o melhor modelo a ser utilizado será o modelo de XGBoostClassifier para prever as classes da qualidade do vinho
 
+Após selecinar o moedelo XGBoost, foi feito a análise e busca do melhores valores dos hiper parametros e para observar o comportamento do modelo foi criado a matrix de confusão
 
 # Step by Step
 1. Importação dos dados
@@ -81,3 +82,5 @@ Assim dizemos que o melhor modelo a ser utilziado será o modelo de XGBoostClass
     
 12. Segunda Conclusão
 13. Cálculo Pontuais
+    13. Criando o Modelo Final XGBoost
+14. Salvando o modelo

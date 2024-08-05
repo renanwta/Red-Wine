@@ -38,7 +38,15 @@ Já para a curva ROC do modelo de XGBoost temos que a pontuação AUC foi de 92%
 
 Assim dizemos que o melhor modelo a ser utilizado será o modelo de XGBoostClassifier para prever as classes da qualidade do vinho
 
+
+
 Após selecinar o moedelo XGBoost, foi feito a análise e busca do melhores valores dos hiper parametros e para observar o comportamento do modelo foi criado a matrix de confusão
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/4649c11b-8f90-4e28-8824-03b4fd8ca18b" width="500px" />
+</div>
+
+Observamos que o temos apenas 4% de falso negativo e 11% de falso postivo
 
 # Step by Step
 1. Importação dos dados

@@ -1,11 +1,11 @@
-# Sobre
-  Conhecido como uma das bebidas mais antigas do mundo, o vinho esteve presente desde o inicio da civilização,  datado cerca de 4000 A.c, as primeiras ferramentas específicas para a produção do vinho e locais de videiras foram encontrada desde a Armênia, Egito até a Grécia França e Itália. A partir disso, o Vinho vem sendo uma das principais bebidas do planetas a ponto de sua composição ser estudado cientificamente para melhorar sua qualidade.
+# Introduction
+Known as one of the oldest beverages in the world, wine has been present since the beginning of civilization, dating back to around 4000 B.C. The first specific tools for wine production and vineyard locations were found from Armenia and Egypt to Greece, France, and Italy. Since then, wine has become one of the most prominent beverages on the planet, to the point where its composition is scientifically studied to improve its quality.
 
-  O presente estudo tem seu cunho de entender mais sobre a qualidade do vinho e criar um modelo de Machine Learning para tentar prever qual a qualidade do vinho a partir de suas composições químicas presentes. Assim o modelo utilizado foi o RandomForestClassifier para determinar a que classe o de qualidade o vinho pertence.
+This study aims to better understand the quality of wine and create a Machine Learning model to predict the wine's quality based on its chemical compositions. The model used was the RandomForestClassifier to determine which quality class the wine belongs to.
 
-  Vale ressaltar que, apesar da base de dados ser retirado de um repositórido de base de dados públicos, os dados apresentaram inconsistências como presenças de outliers nas features e na variável dependente e o desbalanceamento no número de notas de qualidade do vinho, assim foi necessário a utilziação de métodos de pré processamentos dos dados para garantir a melhor acurácia dos modelo criado, Além disso, pela natureza das features, foi necessário o pré processamento de padronização dos dados antes da criação do modelo. Por fim, para garantir a integridade das etapas do projeto setá utilizado a metdologia CRISP-DM para auxiliar o projeto.
+It is important to note that, although the dataset was sourced from a public data repository, the data presented inconsistencies such as the presence of outliers in the features and the dependent variable, as well as an imbalance in the number of wine quality ratings. Therefore, data preprocessing methods were required to ensure the best accuracy of the created model. Additionally, due to the nature of the features, data standardization was necessary before model creation. Finally, to ensure the integrity of the project's stages, the CRISP-DM methodology will be used to support the project.
 
-# Ferramentas
+# Tools
 ## Python
 
 - Data Processing: Pandas e Numpy
@@ -20,79 +20,93 @@
 
 Cortez,Paulo, Cerdeira,A., Almeida,F., Matos,T., and Reis,J.. (2009). Wine Quality. UCI Machine Learning Repository. https://doi.org/10.24432/C56S3T.
 
-# Resultados
-Após todos os tramentos e pré processamento dos dados, foi refeita os modelos de de SVC e Logistic Regression, assim, para poder validar e veriicar qual dos modelos a serem utilizados, foi calculado o a curva ROC e a pontuação AUC.
+
+# Main Features and Target
+
+The first step of our project is to understand what is our goals, problemns and how we can deal with it.
+
+So first of all, this dataset is related about a variants of a Portuguese red wine called 'Vinho Verde', so to understand more about the quality of these the owner of this dataset made available the characteristic of the wine that he studied and the classification based of theses features.
+
+The main features avaible on this dataset are:
+* fixed acidity
+* volatile acidity
+* citric acid
+* residual sugar
+* chlorides
+* free sulfur dioxide
+* total sulfur dioxide
+* density
+* pH
+* sulphates
+* alcohol
+
+And the target of this dataset is:
+* quality (score between 0 and 10)
+
+# Structure
+
+## Structure of CRISP-DM
+The structure that we will use is based on CRISP-DM method, so it is basically 6 steps to create a project until the depoyment.
+
+  <div align="center">
+  <img src="https://github.com/user-attachments/assets/f5b4f818-83b3-42ab-8193-7c994eff5545" width="500px" />
+  </div>
+
+
+
+## Structure of our project
+
+
+*  Business Understanding
+  * Goals
+
+*  Data Understanding
+  *  Splitting the dataset
+  * Understanding the distribution
+  * Looking for the Outliers
+  * Looking for the correlations
+
+* Data Preparation
+  * Removing the features
+  * Tratment of Outliers
+  * Looking the distribution features again
+  * Binarize target
+
+* Modeling
+  * Preprocess of data
+    * Creating the variable train and test
+    * Creating the pipeline for preprocess
+    * Searching the best model
+  * Creating the Pipeline
+  * Cross validation
+  * Tuning
+
+* Evaluation
+  * Nested Cross Validation
+  * Confusion Matrix
+  * Curve Roc
+
+* Deploy
+
+* Conclusion
+
+# Results
+* Result of Nested Cross Validation
+  <div align="center">
+  <img src="https://github.com/user-attachments/assets/9937b247-fda3-467c-b07c-4b6026248d07" width="150px" />
+  </div>
+The Nested Cross Validation show that ou model isn't overfitting or underfitting.
+
+* Curve Roc and AUC Score
 <div align="center">
-<img src="https://github.com/user-attachments/assets/7d8a2d6e-b3b7-4fbf-8e35-e47b2809809c" width="500px" />
+<img src="https://github.com/user-attachments/assets/ecfe4eee-0468-43e6-9d1d-632cba112c7f" width="500px" />
 </div>
-Para a curva ROC do modelo de SVC temos que a pontuação AUC foi de 85%
 
+Our project result a good ROC curve and AUC Score, what means that our models is capable to separete new data nicely.
+
+* Confusion Matrix
 <div align="center">
-<img src="https://github.com/user-attachments/assets/9df72513-b84a-4431-9552-6593b3ed3f08" width="500px" />
-</div>
-Já para a curva ROC do modelo de Logistic Regression temos que a pontuação AUC foi de 81%
-
-
-<div align="center">
-<img src="https://github.com/user-attachments/assets/8401be45-de5e-4d60-b1c2-7846814a42e0" width="500px" />
-</div>
-Já para a curva ROC do modelo de XGBoost temos que a pontuação AUC foi de 92%
-
-Assim dizemos que o melhor modelo a ser utilizado será o modelo de XGBoostClassifier para prever as classes da qualidade do vinho
-
-
-
-Após selecinar o moedelo XGBoost, foi feito a análise e busca do melhores valores dos hiper parametros e para observar o comportamento do modelo foi criado a matrix de confusão
-
-<div align="center">
-<img src="https://github.com/user-attachments/assets/4649c11b-8f90-4e28-8824-03b4fd8ca18b" width="500px" />
+<img src="https://github.com/user-attachments/assets/6e4be555-5baf-4e37-acd3-604fe71ba085" width="500px" />
 </div>
 
-Observamos que o temos apenas 4% de falso negativo e 11% de falso postivo
-
-# Step by Step
-1. Importação dos dados
-2. Conhecendo os dados
-
-   2.1 Observando os Outliers
-   
-   2.2 Tratando os Outliers
-   
-   2.3 Histograma após o tratamento
-
-3. Selecionando as features
-
-   3.1 Encontrando as Colunas
-
-4. Criação dos modelo Suport Vetorial Classification - SVC
-   
-   4.1 Cálculo do base line
-   
-5. Criação dos modelo Logistic Regression
-   
-   5.1 Cálculo do base line
-
-6. Primeira Conclusão
-7. Rebalanceamento dos dados da variável dependente
-8. Novo Modelo de SVC
-   
- 8.1 Cálculo da Curva ROC e pontuação AUC
- 
-9. Novo Modelo de Logistic Regression
-
-    9.1 Cálculo da Curva ROC e pontuação AUC
-
-10. Modelo XGBoost
-
-    10.1 Cálculo da Curva ROC e pontuação AUC
-
-11. RandomSearchCV para o modelos selecionado
-    
-    11.1 Nested Cross Validation
-    
-12. Segunda Conclusão
-13. Cálculo Pontuais
-
-    13.1 Criando o Modelo Final XGBoost
-    
-14. Salvando o modelo
+The confusion matrix show us figurative how hor models is working with the dataset of test, and we can see that our models is capable to classify new data.
